@@ -3,11 +3,17 @@ import React from 'react'
 const Tile = (props) => {
 
     const {
-        getRandomColor
+        getRandomColor,
+        validate
         } = props;
-
+    const color = getRandomColor();
     return (
-        <div className="tile" style={{backgroundColor: getRandomColor()}}/>
+        <div
+            data-color={color}
+            className="tile"
+            style={{backgroundColor: color}}
+            onClick={(e) => validate(e.target)}
+        />
     )
 
 };

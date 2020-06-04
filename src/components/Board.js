@@ -5,6 +5,7 @@ const Board = (props) => {
     const {
         size,
         getRandomColor,
+        validate
         } = props;
 
     const drawBoard = () => {
@@ -14,8 +15,8 @@ const Board = (props) => {
             for (let i = 0; i < size; i++) {
                 rowArray.push(
                     i === size - 1
-                        ? [<Tile data-selected={false} data-row={x} data-column={i} getRandomColor={getRandomColor}/>, <br />]
-                        : <Tile data-selected={false} data-row={x} data-column={i} getRandomColor={getRandomColor} />
+                        ? [<Tile validate={validate} data-selected={false} data-row={x} data-column={i} getRandomColor={getRandomColor}/>, <br />]
+                        : <Tile validate={validate} data-selected={false} data-row={x} data-column={i} getRandomColor={getRandomColor} />
                 );
             }
             boardArray.push(rowArray);
