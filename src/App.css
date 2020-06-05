@@ -1,5 +1,15 @@
+body {
+    background-color: lightpink;
+}
+
+section {
+    margin-bottom: -8em;
+}
+
 #kandiKrushGame {
     text-align: center;
+    font-size: 1.5em;
+    color: #BFFF00
 }
 #kandiKrushBoard {
   margin: 10em auto;
@@ -19,6 +29,14 @@
     cursor: pointer;
 }
 
-body {
-    background-color: lightpink;
+.toast {
+    position: absolute;
+    font-size:2em;
+    margin: 4em 30%;
+    background-color: yellow;
+    height: 10em;
+    width: 10em;
+    border: 1em solid white;
+    border-radius: 20px;
+    color: #3a33d1;
 }
