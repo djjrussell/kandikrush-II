@@ -25,6 +25,10 @@ section {
     display: inline-block;
 }
 
+.tile.selected {
+    border: 3px solid white;
+}
+
 .tile:hover {
     cursor: pointer;
 }
